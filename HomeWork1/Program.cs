@@ -138,8 +138,8 @@ namespace HomeWork1
                         Console.WriteLine(i);
                 }
             }
-            
-            
+
+           
             
         }
     }
