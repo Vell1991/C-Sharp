@@ -231,6 +231,13 @@ namespace HomeWork_Array_
                         minValue = arr[i, j];
                         Ymin = i;
                         Xmin = j;
+                    }
+
+                    if (minValue > arr[i, j])
+                    {
+                        minValue = arr[i, j];
+                        Ymin = i;
+                        Xmin = j;
 
                     }
 
@@ -337,6 +344,13 @@ namespace HomeWork_Array_
             Console.WriteLine("Exercise 6");
             string str6 = "today is a good day for walking. i will try to walk near the sea.";
             string[] str9 = str6.Split('.');
+            for (int i = 0; i < (str9.Length - 1); i++)
+            {
+                if (i == 0)
+                    str6 = str9[i].Substring(0, 1).ToUpper() + str9[i].Substring(1) + ". ";
+                else
+                    str6 += str9[i].Substring(1, 1).ToUpper() + str9[i].Substring(2) + ". ";
+            }
 
             Console.WriteLine(str6);
 
