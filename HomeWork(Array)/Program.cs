@@ -371,7 +371,7 @@ namespace HomeWork_Array_
             Console.WriteLine("\n\n");
             Console.WriteLine(str2 = str.Replace("die", "***"));
 
-
+            
         }
     }
 }
